@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="icon" href="../static/images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+<style>
+           table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+</style>
+<body>
+
+<div class="col-sm-12">
+        <div class="well">
+            <table>
+                <tr>
+                  <td><b>ORGANIZATION</b></td>
+                  <td><b>DEPARTMENT</b></td>
+                  <td><b>MESSAGE</b></td>
+                </tr>
+        {% for mymessage in mymessages %}
+                <tr>
+                  <td>{{ mymessage.organization }}</td>
+                  <td>{{ mymessage.department }}</td>
+                  <td>{{ mymessage.anonymous }}</td>
+                </tr>
+        {% endfor %}
+              </table>
+
+        </div>
+
+
+
+
+</body>
+</html>

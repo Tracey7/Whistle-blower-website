@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <link rel="icon" href="../static/images/fevicon.png" type="image/gif" />
+    <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    <
+
+
+</head>
+<style>
+    body{
+	margin:0;
+	color:#6a6f8c;
+	background:#c8c8c8;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:100%;
+	margin:auto;
+	max-width:525px;
+	min-height:670px;
+	position:relative;
+	background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+</style>
+<body>
+<div class="header_main">
+		<div class="container">
+			<div class="logo"><a href="home.html"><img src="../static/images/logo.png"></a></div>
+		</div>
+	</div>
+	</div>
+	<div class="header">
+		<div class="container">
+        <!--  header inner -->
+            <div class="col-sm-12">
+
+                 <div class="menu-area">
+                    <nav class="navbar navbar-expand-lg ">
+                        <!-- <a class="navbar-brand" href="#">Menu</a> -->
+<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       <i class="fa fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                               <li class="nav-item active">
+                                <a class="nav-link" href="home.html">HOME<span class="sr-only">(current)</span></a> </li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT</a></li>
+                               <li class="nav-item">
+                                <a class="nav-link" href="services.html">SERVICES</a></li>
+                                <li class="nav-item">
+                                <a class="nav-link" href={{ url_for('users') }}>USERS</a></li>
+
+
+                               <li class="nav-item">
+      	                        <a class="nav-link" href="contact.html">CONTACT</a></li>
+                               <li class="last"><a href="#"><img src="../static/images/search-icon.png" alt="icon"></a></li>
+
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header end -->
+    <!--banner start -->
+    <div class="banner-main">
+    	<div class="container">
+           <!--div id="main_slider" class="carousel slide" data-ride="carousel">
+           <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+    		    <div class="titlepage-h1">
+    	        <h1 class="bnner_title">Welcome To<br>
+    	        <span style="color: #10b5fa">Whistle blowing services</span></h1>
+    	        <p class="long_text">There is accordingly no doubt that more needs to be done by legislators as well as public and private entities to encourage whistle-blowing and related reports of corruption; to handle reports of alleged corruption, wrongdoing and undue risks in a sound manner; and to provide appropriate levels of protection for whistle-blowers </p>
+    		    </div>
+    		    <div class="btn_main">
+    			<button type="button" class="btn btn-dark btn-lg"><a href="contact.html">Contact</a></button>
+            </div>
+        </div>
+
+
+  </div>
+         <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-right"></i>
+            </a>
+    </div>
+</div>
+</div>
+<!--banner end -->
+    <!--services start -->
+    <div class="services_main">
+    	<div class="container">
+    		<div class="creative_taital">
+    			<h1 class="creative_text">Whistle Blowing Services</h1>
+    			<p style="color: #050000; text-align: center;">There is accordingly no doubt that more needs to be done by legislators as well as public and private entities to encourage whistle-blowing and related reports of corruption; to handle reports of alleged corruption, wrongdoing and undue risks in a sound manner; and to provide appropriate levels of protection for whistle-blowers. Vanderkerckhove and others (2016, p. 4) suggest that whistle-blowing systems can be more successful if they provide a combination of reporting channels (e.g. directly to specific trusted persons, via a telephone hotline, or through an online channel); if the authorities make a point of communicating with whistle-blowers throughout the investigation process to maintain trust (a failure to be responsive may give rise to a perception that the wrongdoing is being covered up or that the investigation is not serious); and if information from reports is connected with information from other sources (such as surveys and audits).</p>
+    			<div class="btn_main">
+    			    <button type="button" class="btn btn-dark btn-lg"><a href="services.html">Get started</a> </button>
+    		    </div>
+    		</div>
+             <div class="contact_main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1 class="touch_text">Contact Us</h1>
+                </div>
+            </div>
+        </div>
+        <div class="contact_section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="../static/images/map-icon.png" style="max-width: 100%;padding-left: 30px; ">
+                            <p class="email-text"><a href="#">Gb road 123 londo<br>Uk</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="../static/images/call-icon.png" style="max-width: 100%;padding-left: 30px;">
+                            <p class="email-text"><a href="#">+7123654897</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="map_icon">
+                            <img src="../static/images/email-icon.png" style="max-width: 100%; padding-left: 30px;">
+                            <p class="email-text"><a href="#">whistle@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Contact_section end -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                   <p class="copyright_text">© 2022 All Rights Reserved. </p>
+                </div>
+            </div>
+        </div>e
+    </div>
+    <!--pop-up-->
+    <div class="popup hide__popup">
+        <div class="popup__content">
+
+            <div class="popup__left">
+                <div class="popup-img__container">
+                    <img class="popup__img" src="../static/images/pop-up.jpg">
+
+
+
+                </div>
+            </div>
+            <div class="popup__right">
+                <div class="right_content">
+                    <div class="login-wrap">
+                        <div class="login-html">
+                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+                            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"><a href="/signup">Sign Up</a> </label>
+                            <div class="login-form">
+                                <div class="sign-in-htm">
+                                    <form method="post">
+                                        <div class="group">
+                                            <label for="user" class="label">Email</label>
+                                            <input name="u_email" id="user" type="text" class="input">
+                                        </div>
+                                        <div class="group">
+                                            <label for="pass" class="label">Password</label>
+                                            <input name="u_pass" id="pass" type="password" class="input" data-type="password">
+                                        </div>
+                                    <div class="group">
+                                            <input id="check" type="checkbox" class="check" checked>
+                                            <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                                    </div>
+                                    <div class="group">
+                                        <input type="submit" class="button" value="Sign In">
+                                    </div>
+
+                                    </form>
+
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <form method="post">
+                        <div class="group">
+                            <label for="user" class="label">Username</label>
+                            <input  name="u_name"id="user" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Email Address</label>
+                            <input name="u_email" id="pass" type="text" class="input">
+                        </div>
+                        <div class="group">
+                            <label for="pass" class="label">Password</label>
+                            <input name="u_pass"  id="pass" type="password" class="input" data-type="password">
+                        </div>
+
+
+                        <div class="group">
+                            <input type="submit" class="button" value="Sign Up">
+                        </div>
+                    </form>
+
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!-- Javascript files-->
+      <script src="../static/js/jquery.min.js"></script>
+      <script src="../static/js/popper.min.js"></script>
+      <script src="../static/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</body>
+</html>
